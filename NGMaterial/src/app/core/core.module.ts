@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
 import {loadSvgResources} from '../utils/svg.util';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,7 @@ import {loadSvgResources} from '../utils/svg.util';
     SidebarComponent
   ],
   imports: [
-    CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
+    SharedModule
     // HttpClientModule
   ],
   exports: [
